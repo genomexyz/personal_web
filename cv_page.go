@@ -29,9 +29,9 @@ func setupRouter() *gin.Engine {
 		c.String(200, "pong")
 	})
 
-	r.GET("/", func(c *gin.Context) {
-		c.Redirect(http.StatusFound, "/cv_genomexyz/index")
-	})
+	//r.GET("/", func(c *gin.Context) {
+	//	c.Redirect(http.StatusFound, "/cv_genomexyz/index")
+	//})
 
 	r.GET("/index", func(c *gin.Context) {
 		var iter_box []int
